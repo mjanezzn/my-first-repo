@@ -6,83 +6,91 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-color: #0f172a; /* Deep dark blue/black */
+    color: #f8fafc;
+}
+
+/* Hero Section Styling */
 .hero {
-    background-color: #f4f7fe; /* Light professional blue tint */
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 2rem;
+    justify-content: center;
+    padding: 20px;
 }
 
 .hero-container {
     max-width: 1100px;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 50px;
 }
 
+/* Text Content */
 .hero-content h1 {
     font-size: 3.5rem;
-    color: #333;
-    margin-bottom: 1rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 .highlight {
-    color: #4f46e5; /* Professional indigo */
+    color: #38bdf8; /* Bright Sky Blue */
+    text-transform: uppercase;
 }
 
 .tagline {
-    font-size: 1.25rem;
-    color: #555;
-    margin-bottom: 2rem;
-}
-
-/* Profile Image Styling */
-.hero-image img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 8px solid white;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-bottom: 30px;
 }
 
 /* Buttons */
 .hero-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 15px;
 }
 
 .btn {
-    text-decoration: none;
-    padding: 0.8rem 1.5rem;
+    padding: 12px 28px;
     border-radius: 8px;
+    text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
 }
 
-.primary {
-    background-color: #4f46e5;
-    color: white;
+.btn.primary {
+    background-color: #38bdf8;
+    color: #0f172a;
 }
 
-.primary:hover {
-    background-color: #4338ca;
+.btn.primary:hover {
+    background-color: #7dd3fc;
+    transform: translateY(-3px);
 }
 
-.secondary {
-    border: 2px solid #4f46e5;
-    color: #4f46e5;
+.btn.secondary {
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
 }
 
-.secondary:hover {
-    background-color: #4f46e5;
-    color: white;
+.btn.secondary:hover {
+    background-color: rgba(56, 189, 248, 0.1);
 }
 
-/* Mobile Responsiveness */
+/* Image Styling */
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30px; /* Rounded corners for a modern feel */
+    border: 4px solid #38bdf8;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .hero-container {
         flex-direction: column-reverse;
@@ -95,5 +103,10 @@
     
     .hero-buttons {
         justify-content: center;
+    }
+    
+    .hero-image img {
+        width: 250px;
+        height: 250px;
     }
 }
