@@ -175,3 +175,95 @@ body {
         justify-content: center;
     }
 }
+/* This centers the whole section on your page */
+.about-me {
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+}
+.about-me h2 {
+    font-size: 2.5rem;
+}
+
+/* The row that holds both boxes */
+.container-row {
+    display: flex;
+    flex-direction: row; /* Forces them side-by-side */
+    gap: 30px;           /* Space between the two boxes */
+    max-width: 1200px;   /* Total width of both boxes combined */
+    width: 100%;
+    align-items: stretch; /* Makes both boxes the same height */
+}
+
+/* The Individual Cards (About & Skills) */
+.glass-card {
+    flex: 1;             /* Ensures they both take up 50% width */
+    padding: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px; /* Matching the rounded look from your photo */
+    box-shadow: 0 0 20px rgba(191, 64, 191, 0.2);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.glass-card h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.glass-card p {
+    text-align: justify;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Skills Tags Styling */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center; /* Centers the skill tags inside the box */
+}
+
+.skill-tag {
+    border: 1px solid #bf40bf;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Responsive: Stack them on top of each other on mobile phones */
+@media (max-width: 900px) {
+    .container-row {
+        flex-direction: column;
+    }
+}
+.skill-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Spaces the icon from the text */
+    padding: 8px 15px;
+    /* keep your existing background and border styles here */
+}
+
+.skill-tag i {
+    font-size: 1.2rem; /* Adjusts icon size */
+}
+/* This targets the container holding both cards */
+.container-row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* The About Me card gets more weight */
+.glass-card:first-child {
+    flex: 2; 
+}
+
+/* The Skills card stays smaller */
+.glass-card:last-child {
+    flex: 1;
+}
