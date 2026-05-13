@@ -363,6 +363,9 @@ body {
     letter-spacing: 1px;
     color: #bc13fe;
 }
+a {
+  text-decoration: none;
+}
 #contacts {
     padding: 60px 20px;
     text-align: center;
