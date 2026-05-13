@@ -432,3 +432,49 @@ body {
     box-shadow: 0 0 15px rgba(186, 0, 255, 0.5);
     border-color: #bc13fe;
 }
+footer {
+    background-color: #0d0216;
+    padding: 50px 0 30px 0;
+    border-top: 2px solid rgba(186, 0, 255, 0.1);
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #fff;
+    /* This adds a glow to your brand name */
+    text-shadow: 0 0 10px rgba(186, 0, 255, 0.5);
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #888;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #bc13fe;
+    letter-spacing: 2px; /* Subtle expansion effect on hover */
+}
+
+.copyright {
+    color: #555;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
