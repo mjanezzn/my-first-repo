@@ -257,3 +257,47 @@ body {
 .skill-tag i {
     font-size: 1.2rem; /* Adjusts icon size */
 }
+/* Container Layout */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #0d0216; /* Dark background matching your screenshot */
+}
+
+.section-title {
+    text-align: center;
+    color: #fff8ff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.projects h4 {
+    text-align: center;
+    color:  #ffffff;
+    font-size: 1.9rem;
+}
+.project-intro-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(186, 0, 255, 0.2);
+    border-radius: 20px;
+    
+    /* Key changes for horizontal look */
+    width: 95%;           /* Makes it very wide */
+    max-width: 1200px;    /* Limits it on very large screens */
+    padding: 20px 40px;   /* Small top/bottom padding, large side padding */
+    margin: 20px auto;    /* Centers it horizontally */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(186, 0, 255, 0.1);
+}
+
+.project-description {
+    color: #ccc;
+    font-size: 1rem;
+    margin: 0;
+    max-width: 90%;       /* Let the text spread out more */
+    text-align: center;
+}
