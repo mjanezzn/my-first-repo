@@ -363,3 +363,72 @@ body {
     letter-spacing: 1px;
     color: #bc13fe;
 }
+#contacts {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #0d0216;
+}
+.contact-description {
+    color: #ccc;
+    font-size: 1.9rem;
+    margin: 0;
+    max-width: 100%;       /* Let the text spread out more */
+    text-align: center;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.contact-intro-box {
+     background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(186, 0, 255, 0.2);
+    border-radius: 20px;
+    
+    /* Key changes for horizontal look */
+    width: 95%;           /* Makes it very wide */
+    max-width: 1200px;    /* Limits it on very large screens */
+    padding: 20px 40px;   /* Small top/bottom padding, large side padding */
+    margin: 20px auto;    /* Centers it horizontally */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(186, 0, 255, 0.1);
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    width: 170px;
+    border-radius: 15px;
+    border: 1px solid rgba(186, 0, 255, 0.2);
+    transition: 0.3s ease;
+}
+
+/* Icons styling */
+.contact-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #bc13fe; /* Matches your glow color */
+}
+
+.contact-card span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Hover Effect */
+.contact-card:hover {
+    transform: translateY(-5px);
+    background: rgba(186, 0, 255, 0.1);
+    box-shadow: 0 0 15px rgba(186, 0, 255, 0.5);
+    border-color: #bc13fe;
+}
