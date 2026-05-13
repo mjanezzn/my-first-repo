@@ -103,6 +103,9 @@ body {
     font-weight: 300;
     opacity: 0.9;
 }
+.hero-content p {
+    font-size: 1.2rem;
+}
 
 /* Buttons */
 .hero-buttons {
